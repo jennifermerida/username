@@ -1,13 +1,13 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** [Jennifer Merida]
+- **Course:** [CPSC 298-0 Intro to Nix]
 - **Assignment:** Username Validation
-- **Date:** [Date of Completion]
+- **Date:** [Janurary 20, 2026]
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+[ This prgram checks if the username entered by the user meets all requirements lised below. It will repeatedly ask users to try again if they fail to meet all the requirements. The purpose is to ensure that all usernames are constistently formatted to help prevent errors for systems that may implement strict username rules.]
 
 ## Username Requirements
 This script validates usernames according to the following rules:
