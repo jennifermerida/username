@@ -27,7 +27,7 @@ To test with the provided input file:
 ```
 
 ## How the Script Works
-This script repeatedly asks users for a new attempt using a while loop which will continue until the username given is valid according to the requirements. It uses Bash’s regular expression matching to make sure that every input aligns with the requirements. If the username matches the regex, the loop will end.
+This script repeatedly asks users for a new attempt using a while loop which will continue until the username given is valid according to the requirements. E input is checked using grep -E to enforce the rules. The -E flag tells grep to interpret the pattern as an extended regex, while the -v flag would invert the match, allowing the script to detect invalid usernames instead of valid ones. Redirect > /dev/null 2>&1 is used for any unwanted output from grep to be suppressed using t, keeping the terminal clean while the script determines if the input is valid.
 
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
@@ -40,16 +40,10 @@ This pattern ensures that:
 - The total length is between 3 and 12 characters
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example valid usernames you tested (at least two)
-- Example invalid usernames and why they fail (at least two)
-- How you used the username-input file to test
-
-## Challenges and Solutions
-[Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
+I tested this script by typing in usernames and using the given username-input file. Valid examples like jenny_m and ana123 were accepted, while invalid ones like 23jennifer (starts with a digit) and SuperLongUsernameOMG123 (more than 12 characters) were rejected. Using the input file made it easy to quickly check multiple usernames at once.
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
+Class lecture slides, Class lecture videos, ChatGPT
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
