@@ -1,13 +1,13 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Jennifer Merida]
-- **Course:** [CPSC 298-0 Intro to Nix]
+- **Name:** Jennifer Merida
+- **Course:** CPSC 298-0 Intro to Nix
 - **Assignment:** Username Validation
-- **Date:** [Janurary 20, 2026]
+- **Date:** Janurary 20, 2026
 
 ## Program Description
-[ This prgram checks if the username entered by the user meets all requirements lised below. It will repeatedly ask users to try again if they fail to meet all the requirements. The purpose is to ensure that all usernames are constistently formatted to help prevent errors for systems that may implement strict username rules.]
+This prgram checks if the username entered by the user meets all requirements lised below. It will repeatedly ask users to try again if they fail to meet all the requirements. The purpose is to ensure that all usernames are constistently formatted to help prevent errors for systems that may implement strict username rules.
 
 ## Username Requirements
 This script validates usernames according to the following rules:
@@ -27,11 +27,7 @@ To test with the provided input file:
 ```
 
 ## How the Script Works
-[Explain in 3-5 sentences how your script validates usernames. Include information about:]
-- The use of the `while` loop
-- The `grep` command with extended regular expressions
-- The meaning of the `-E` and `-v` flags
-- The redirect `> /dev/null 2>&1`
+This script repeatedly asks users for a new attempt using a while loop which will continue until the username given is valid according to the requirements. It uses Bash’s regular expression matching to make sure that every input aligns with the requirements. If the username matches the regex, the loop will end.
 
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
